@@ -27,7 +27,7 @@ const handleProjectSubmit = async (e) => {
   };
 
   try {
-    const res = await fetch('http://localhost:8000/projects', {
+    const res = await fetch('https://management-4.onrender.com/projects', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newProject)
@@ -58,7 +58,7 @@ const handleClientSubmit = async (e) => {
   };
 
   try {
-    const res = await fetch('http://localhost:8000/clients', {
+    const res = await fetch('https://management-4.onrender.com/clients', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newClient)
@@ -81,12 +81,12 @@ const handleClientSubmit = async (e) => {
 
  
  useEffect(() => {
-  fetch('http://localhost:8000/contacts')
+  fetch('https://management-4.onrender.com/contacts')
     .then(res => res.json())
     .then(data => setContacts(data))
     .catch(err => console.error('Error fetching contacts:', err));
 
-  fetch('http://localhost:8000/subscribers')
+  fetch('https://management-4.onrender.com/subscribers')
     .then(res => res.json())
     .then(data => setSubscribers(data))
     .catch(err => console.error('Error fetching subscribers:', err));

@@ -6,7 +6,7 @@ const HappyClients = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:8000/clients')
+    fetch('https://management-4.onrender.com/clients')
       .then(res => res.json())
       .then(data => {
         setClients(data);

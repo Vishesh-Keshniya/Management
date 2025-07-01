@@ -6,7 +6,7 @@ const OurProjects = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:8000/projects')
+    fetch('https://management-4.onrender.com/projects')
       .then(res => res.json())
       .then(data => {
         setProjects(data);

@@ -7,7 +7,7 @@ const FooterSection = () => {
 
   const handleSubscribe = async () => {
     try {
-      const res = await fetch('http://localhost:8000/subscribe', {
+      const res = await fetch('https://management-4.onrender.com/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email })
