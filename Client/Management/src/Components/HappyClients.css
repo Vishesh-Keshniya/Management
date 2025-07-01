@@ -1,0 +1,80 @@
+.happy-clients {
+  padding: 100px 40px;
+  background-color: #ffffff;
+  text-align: center;
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.happy-clients h2 {
+  font-size: 2rem;
+  color: #2563eb;
+  margin-bottom: 40px;
+}
+
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.client-card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  width: 230px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-6px);
+}
+
+.client-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.10);
+
+  
+}
+
+.client-text {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  text-align:  left;
+}
+
+.client-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 4px;
+  text-align:  left;
+}
+
+.client-role {
+  font-size: 0.85rem;
+  color: #777;
+  text-align:  left;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .client-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .client-card {
+    width: 90%;
+    max-width: 350px;
+  }
+}

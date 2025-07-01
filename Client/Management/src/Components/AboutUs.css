@@ -1,0 +1,51 @@
+.about-us {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  color: #2563eb;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.underline {
+  width: 80px;
+  height: 6px;
+  background-color: #2563eb;
+  border-radius: 4px;
+  margin: 0 auto 30px;
+}
+
+.about-us p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.learn-more-btn1 {
+  padding: 12px 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background-color: transparent;
+  border-bottom: 2px solid #2563eb;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #2563eb;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn1:hover {
+  background-color: #2563eb;
+  color: #fff;
+}
